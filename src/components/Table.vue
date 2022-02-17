@@ -39,6 +39,7 @@
                             <td class="editable" @click="editField(row, true, 'side-effects')">{{row["side-effects"]}}</td>
                             <td class="editable" @click="editField(row, true, 'effectiveness')">{{row.effectiveness}}</td>
                             <td class="editable note" @click="editField(row, false, 'note')">{{row.note}}</td>
+                            <td>
                                 <button v-if="row.saved" @click="clickedAddRemove(row, false)">Remove</button>
                             </td>
                         </tr>
